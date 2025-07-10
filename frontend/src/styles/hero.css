@@ -1,0 +1,182 @@
+/* Hero Section */
+.hero-section {
+  margin-top: 2rem;
+  /* padding: 4rem 1rem;
+  background: linear-gradient(135deg, var(--color-dark) 40%, var(--color-soft-peach) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+
+/* Hero Card with Gradient Background */
+.hero-card {
+  background: linear-gradient(135deg, #3a2d32, #d30c7b);
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 32px rgba(58, 45, 50, 0.4);
+  max-width: 800px;
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+
+.hero-card:hover {
+  transform: scale(1.02);
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-light-peach);
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: var(--color-light-peach);
+  line-height: 1.8;
+  max-width: 700px;
+  margin-top: 1rem;
+}
+
+/* Buttons */
+.hero-btn {
+  background-color: var(--color-pink-highlight);
+  border: 2px solid var(--color-pink-highlight);
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(211, 12, 123, 0.3);
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: var(--color-dark);
+  color: var(--color-light-peach);
+  border-color: var(--color-pink-highlight);
+  box-shadow: 0 6px 15px rgba(211, 12, 123, 0.5);
+}
+
+.hero-btn-outline {
+  border: 2px solid var(--color-light-peach);
+  color: var(--color-light-peach);
+  background-color: transparent;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero-btn-outline:hover {
+  background-color: var(--color-light-peach);
+  color: var(--color-dark);
+  box-shadow: 0 6px 15px rgba(255, 227, 220, 0.4);
+}
+
+/* Feature Cards – Different Gradient per Card */
+.feature-card {
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  margin: 2rem;
+  transition: all 0.3s ease;
+  height: 70%;
+  background-size: 200% 200%;
+  background-position: center;
+}
+
+/* Unique gradient per card */
+.feature-card:nth-child(1) {
+  background: linear-gradient(135deg, #3a2d32, #a2ad91);
+}
+.feature-card:nth-child(2) {
+  background: linear-gradient(135deg, #dbb4ad, #3a2d32);
+}
+.feature-card:nth-child(3) {
+  background: linear-gradient(135deg, #ffe3dc, #d30c7b);
+}
+
+.feature-card h5 {
+  color: var(--color-light-peach);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.feature-card p {
+  color: var(--color-light-peach);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+
+/* Tech Card with Gradient */
+.tech-card {
+  background: linear-gradient(135deg, #3a2d32, #dbb4ad);
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.tech-card h5 {
+  color: var(--color-light-peach);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.tech-card img {
+  height: 50px;
+  margin: 0 1rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tech-card img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-btn,
+  .hero-btn-outline {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .tech-card img {
+    margin: 0.5rem;
+  }
+}

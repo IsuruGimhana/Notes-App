@@ -1,0 +1,89 @@
+
+/* Navbar with gradient */
+.custom-navbar {
+  background: linear-gradient(90deg, var(--color-dark), var(--color-muted-olive));
+  border-bottom: 2px solid var(--color-soft-peach);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Brand */
+.custom-navbar .navbar-brand {
+  color: var(--color-light-peach) !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: var(--color-pink-highlight) !important;
+  transform: scale(1.05);
+}
+
+/* Nav Links */
+
+.custom-navbar .navbar-nav .nav-link {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: var(--color-pink-highlight) !important;
+}
+
+
+.custom-navbar .nav-link {
+  color: var(--color-light-peach) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link::after {
+  content: '';
+  display: block;
+  width: 30%;
+  height: 2px;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.custom-navbar .nav-link:hover::after {
+  color: var(--color-pink-highlight);
+  width: 100%;
+  transition: width 0.3s;
+}
+
+/* Dropdown Menu */
+.custom-navbar .dropdown-menu {
+  background-color: var(--color-soft-peach);
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 0 !important;
+}
+
+.custom-navbar .dropdown-item {
+  color: var(--color-dark);
+  padding: 10px 20px;
+  border-radius: 0.3rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.custom-navbar .dropdown-item:hover {
+  background-color: var(--color-pink-highlight);
+  color: var(--color-light-peach);
+}
+
+.custom-navbar .dropdown-divider {
+  height: 1px;
+  margin: 0;
+  opacity: 0.7;
+}
+
