@@ -1,21 +1,15 @@
 /* Hero Section */
 .hero-section {
   margin-top: 2rem;
-  /* padding: 4rem 1rem;
-  background: linear-gradient(135deg, var(--color-dark) 40%, var(--color-soft-peach) 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
 }
 
 /* Hero Card with Gradient Background */
 .hero-card {
-  background: linear-gradient(135deg, #3a2d32, #d30c7b);
+  background: linear-gradient(135deg, var(--color-deep-purple), var(--color-bright-blue));
   color: white;
   border: none;
   border-radius: 1.5rem;
-  box-shadow: 0 12px 32px rgba(58, 45, 50, 0.4);
+  box-shadow: 0 12px 32px rgba(27, 23, 37, 0.4); /* adapted from new dark shade */
   max-width: 800px;
   text-align: center;
   transition: transform 0.4s ease;
@@ -28,12 +22,12 @@
 .hero-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--color-light-peach);
+  color: var(--color-pale-purple);
 }
 
 .hero-description {
   font-size: 1rem;
-  color: var(--color-light-peach);
+  color: var(--color-pale-purple);
   line-height: 1.8;
   max-width: 700px;
   margin-top: 1rem;
@@ -41,25 +35,25 @@
 
 /* Buttons */
 .hero-btn {
-  background-color: var(--color-pink-highlight);
-  border: 2px solid var(--color-pink-highlight);
+  background-color: var(--color-bright-blue);
+  border: 2px solid var(--color-bright-blue);
   padding: 0.6rem 1.5rem;
   font-weight: 600;
   border-radius: 50px;
-  box-shadow: 0 4px 10px rgba(211, 12, 123, 0.3);
+  box-shadow: 0 4px 10px rgba(34, 108, 224, 0.3);
   transition: all 0.3s ease;
 }
 
 .hero-btn:hover {
-  background-color: var(--color-dark);
-  color: var(--color-light-peach);
-  border-color: var(--color-pink-highlight);
-  box-shadow: 0 6px 15px rgba(211, 12, 123, 0.5);
+  background-color: var(--color-deep-purple);
+  color: var(--color-pale-purple);
+  border-color: var(--color-bright-blue);
+  box-shadow: 0 6px 15px rgba(34, 108, 224, 0.5);
 }
 
 .hero-btn-outline {
-  border: 2px solid var(--color-light-peach);
-  color: var(--color-light-peach);
+  border: 2px solid var(--color-pale-purple);
+  color: var(--color-pale-purple);
   background-color: transparent;
   padding: 0.6rem 1.5rem;
   border-radius: 50px;
@@ -68,12 +62,12 @@
 }
 
 .hero-btn-outline:hover {
-  background-color: var(--color-light-peach);
-  color: var(--color-dark);
-  box-shadow: 0 6px 15px rgba(255, 227, 220, 0.4);
+  background-color: var(--color-pale-purple);
+  color: var(--color-deep-purple);
+  box-shadow: 0 6px 15px rgba(208, 188, 213, 0.4);
 }
 
-/* Feature Cards – Different Gradient per Card */
+/* Feature Cards */
 .feature-card {
   color: white;
   border: none;
@@ -89,23 +83,23 @@
 
 /* Unique gradient per card */
 .feature-card:nth-child(1) {
-  background: linear-gradient(135deg, #3a2d32, #a2ad91);
+  background: linear-gradient(135deg, var(--color-deep-purple), var(--color-slate-purple));
 }
 .feature-card:nth-child(2) {
-  background: linear-gradient(135deg, #dbb4ad, #3a2d32);
+  background: linear-gradient(135deg, var(--color-lavender-gray), var(--color-deep-purple));
 }
 .feature-card:nth-child(3) {
-  background: linear-gradient(135deg, #ffe3dc, #d30c7b);
+  background: linear-gradient(135deg, var(--color-pale-purple), var(--color-bright-blue));
 }
 
 .feature-card h5 {
-  color: var(--color-light-peach);
+  color: var(--color-pale-purple);
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .feature-card p {
-  color: var(--color-light-peach);
+  color: var(--color-pale-purple);
   line-height: 1.6;
   font-size: 0.95rem;
 }
@@ -117,7 +111,7 @@
 
 /* Tech Card with Gradient */
 .tech-card {
-  background: linear-gradient(135deg, #3a2d32, #dbb4ad);
+  background: linear-gradient(135deg, var(--color-deep-purple), var(--color-lavender-gray));
   color: white;
   border: none;
   border-radius: 1.5rem;
@@ -128,7 +122,7 @@
 }
 
 .tech-card h5 {
-  color: var(--color-light-peach);
+  color: var(--color-pale-purple);
   margin-bottom: 1.5rem;
   font-weight: 700;
 }

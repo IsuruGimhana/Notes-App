@@ -1,37 +1,38 @@
 h1 {
-  color: var(--color-pink-highlight);
+  color: var(--color-bright-blue); /* was --color-pink-highlight */
   font-weight: bold;
 }
 
 .form-control {
-  border: 2px solid var(--color-soft-peach);
+  border: 2px solid var(--color-pale-purple); /* was --color-soft-peach */
   background-color: #fff;
-  color: var(--color-dark);
+  color: var(--color-deep-purple); /* was --color-dark */
 }
 
 .form-control:focus {
-  border-color: var(--color-pink-highlight);
-  box-shadow: 0 0 0 0.2rem rgba(211, 12, 123, 0.25);
+  border-color: var(--color-bright-blue); /* was --color-pink-highlight */
+  box-shadow: 0 0 0 0.2rem rgba(34, 108, 224, 0.25); /* rgba for --color-bright-blue */
 }
 
 button[type='submit'] {
-  background-color: var(--color-pink-highlight);
+  background-color: var(--color-bright-blue); /* was --color-pink-highlight */
   border: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  color: white;
 }
 
 button[type='submit']:hover {
-  background-color: var(--color-dark);
+  background-color: var(--color-deep-purple); /* was --color-dark */
 }
 
 a {
-  color: var(--color-pink-highlight);
+  color: var(--color-bright-blue); /* was --color-pink-highlight */
   text-decoration: underline;
 }
 
 a:hover {
-  color: var(--color-dark);
+  color: var(--color-deep-purple); /* was --color-dark */
 }
 
 @keyframes fadeIn {

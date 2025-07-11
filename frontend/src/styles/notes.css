@@ -1,0 +1,121 @@
+/* Container and General */
+.notes-page {
+  background: linear-gradient(135deg, var(--color-slate-purple), var(--color-lavender-gray));
+  padding: 3rem 1rem;
+  min-height: 100vh;
+}
+
+/* Note Card Styling */
+.note-card {
+  background: linear-gradient(135deg, var(--color-deep-purple), var(--color-slate-purple));
+  color: var(--color-pale-purple);
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+}
+
+.note-card .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--color-pale-purple);
+}
+
+.note-card .card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-pale-purple);
+}
+
+/* Buttons Inside Note Cards */
+.note-card .btn-outline-primary {
+  border-color: var(--color-bright-blue);
+  color: var(--color-bright-blue);
+}
+
+.note-card .btn-outline-primary:hover {
+  background-color: var(--color-bright-blue);
+  color: white;
+}
+
+.note-card .btn-outline-danger {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.note-card .btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Add Note Button */
+button.btn.btn-primary {
+  background-color: var(--color-bright-blue);
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button.btn.btn-primary:hover {
+  background-color: var(--color-slate-purple);
+}
+
+/* Modal Styling */
+.modal-content {
+  background: linear-gradient(135deg, var(--color-lavender-gray), var(--color-pale-purple));
+  border-radius: 1rem;
+  color: var(--color-deep-purple);
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: bold;
+  color: var(--color-deep-purple);
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--color-deep-purple);
+}
+
+.form-control {
+  border: 2px solid var(--color-pale-purple);
+  background-color: white;
+  color: var(--color-deep-purple);
+}
+
+.form-control:focus {
+  border-color: var(--color-bright-blue);
+  box-shadow: 0 0 0 0.2rem rgba(34, 108, 224, 0.25);
+}
+
+/* Submit Button in Modal */
+.modal-footer .btn-success,
+button[type='submit'].btn-success {
+  background-color: var(--color-bright-blue);
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-success:hover,
+button[type='submit'].btn-success:hover {
+  background-color: var(--color-slate-purple);
+}
+
+/* Error & Loading */
+.text-danger {
+  color: #dc3545;
+}
+
+.spinner-border {
+  color: var(--color-bright-blue);
+}

@@ -1,14 +1,13 @@
-
 /* Navbar with gradient */
 .custom-navbar {
-  background: linear-gradient(90deg, var(--color-dark), var(--color-muted-olive));
-  border-bottom: 2px solid var(--color-soft-peach);
+  background: linear-gradient(90deg, var(--color-deep-purple), var(--color-slate-purple)); /* replaced --color-dark, --color-muted-olive */
+  border-bottom: 2px solid var(--color-pale-purple); /* replaced --color-soft-peach */
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Brand */
 .custom-navbar .navbar-brand {
-  color: var(--color-light-peach) !important;
+  color: var(--color-pale-purple) !important; /* replaced --color-light-peach */
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -16,12 +15,11 @@
 }
 
 .custom-navbar .navbar-brand:hover {
-  color: var(--color-pink-highlight) !important;
+  color: var(--color-bright-blue) !important; /* replaced --color-pink-highlight */
   transform: scale(1.05);
 }
 
 /* Nav Links */
-
 .custom-navbar .navbar-nav .nav-link {
   font-weight: 500;
   display: flex;
@@ -31,12 +29,11 @@
 }
 
 .custom-navbar .navbar-nav .nav-link:hover {
-  color: var(--color-pink-highlight) !important;
+  color: var(--color-bright-blue) !important; /* replaced --color-pink-highlight */
 }
 
-
 .custom-navbar .nav-link {
-  color: var(--color-light-peach) !important;
+  color: var(--color-pale-purple) !important; /* replaced --color-light-peach */
   font-weight: 500;
   padding: 0.5rem 1rem;
   position: relative;
@@ -55,14 +52,14 @@
 }
 
 .custom-navbar .nav-link:hover::after {
-  color: var(--color-pink-highlight);
+  color: var(--color-bright-blue); /* replaced --color-pink-highlight */
   width: 100%;
   transition: width 0.3s;
 }
 
 /* Dropdown Menu */
 .custom-navbar .dropdown-menu {
-  background-color: var(--color-soft-peach);
+  background-color: var(--color-pale-purple); /* replaced --color-soft-peach */
   border: none;
   border-radius: 0.3rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -70,15 +67,15 @@
 }
 
 .custom-navbar .dropdown-item {
-  color: var(--color-dark);
+  color: var(--color-deep-purple); /* replaced --color-dark */
   padding: 10px 20px;
   border-radius: 0.3rem;
   transition: background-color 0.2s ease-in-out;
 }
 
 .custom-navbar .dropdown-item:hover {
-  background-color: var(--color-pink-highlight);
-  color: var(--color-light-peach);
+  background-color: var(--color-bright-blue); /* replaced --color-pink-highlight */
+  color: var(--color-pale-purple); /* replaced --color-light-peach */
 }
 
 .custom-navbar .dropdown-divider {
@@ -86,4 +83,3 @@
   margin: 0;
   opacity: 0.7;
 }
-

@@ -1,7 +1,20 @@
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import '../styles/hero.css';
 
 const HomePage = () => {
+
+  const { userInfo } = useSelector((state) => state.auth);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (userInfo) {
+      navigate('/notes');
+    }
+  }, [navigate, userInfo]);
+
   return (
     <div className='hero-section'>
       <Container>
@@ -10,7 +23,7 @@ const HomePage = () => {
           <Col md={{ span: 8, offset: 2 }}>
             <Card className='p-5 d-flex flex-column align-items-center hero-card text-center fade-in'>
               <p className="hero-description">
-                Kickstart your web application with a secure and modern authentication system built on the MERN stack. This template provides everything you need — user login, registration, JWT-based sessions with HTTP-only cookies, and seamless state management using Redux Toolkit — all styled with React Bootstrap for a clean and responsive UI.
+                Welcome to the Notes MERN App — a powerful and secure full-stack note-taking application. Built with MongoDB, Express, React, and Node.js, this app features user authentication, note CRUD functionality, JWT sessions stored in HTTP-only cookies, and seamless state management with Redux Toolkit.
               </p>
               <div className='d-flex flex-wrap justify-content-center gap-3 mt-4'>
                 <Button variant='primary' href='/login' className='hero-btn'>
@@ -28,20 +41,20 @@ const HomePage = () => {
         <Row>
           <Col md={4}>
             <Card className='p-4 feature-card'>
+              <h5>Notes Management</h5>
+              <p>Create, edit, and delete personal notes with ease.</p>
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card className='p-4 feature-card'>
               <h5>Secure Auth</h5>
-              <p>JWT stored in HTTP-only cookies with full protection.</p>
+              <p>JWT stored in HTTP-only cookies for maximum security.</p>
             </Card>
           </Col>
           <Col md={4}>
             <Card className='p-4 feature-card'>
               <h5>Redux Toolkit</h5>
-              <p>Centralized state management for scalability.</p>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className='p-4 feature-card'>
-              <h5>Fast Setup</h5>
-              <p>Plug-and-play boilerplate to kickstart your project.</p>
+              <p>Centralized and scalable state management.</p>
             </Card>
           </Col>
         </Row>

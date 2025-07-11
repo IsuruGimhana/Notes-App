@@ -7,6 +7,7 @@ import cookieParser from 'cookie-parser';
 
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import userRoutes from './routes/userRoutes.js';
+import noteRoutes from './routes/noteRoutes.js';
 
 dotenv.config();
 
@@ -38,6 +39,7 @@ app.use(
 
 // API Routes
 app.use('/api/users', userRoutes);
+app.use('/api/notes', noteRoutes);
 
 // 🌐 Static Files (Production Mode)
 if (process.env.NODE_ENV === 'production') {

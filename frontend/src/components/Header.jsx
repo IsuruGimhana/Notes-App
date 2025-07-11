@@ -32,7 +32,7 @@ const Header = () => {
       <Navbar expand='lg' collapseOnSelect className='custom-navbar'>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>Authentication System</Navbar.Brand>
+            <Navbar.Brand>Notes</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
