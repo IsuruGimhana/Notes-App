@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { useLogoutMutation } from '../slices/apiSlice';
 import { userLogout as logout } from '../slices/authSlice';
 
-import '../styles/Header.css';
+import '../styles/header.css';
 
 const Header = () => {
   const { userInfo } = useSelector((state) => state.auth);
