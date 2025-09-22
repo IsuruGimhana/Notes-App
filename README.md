@@ -7,7 +7,7 @@ A full-stack **Notes Application** built with **MERN stack** (MongoDB, Express, 
 ## Live Demo
 [View Live Demo](https://your-live-demo-link.com)  
 
-![Portfolio Screenshot](/Notes-App/frontend/public/notes-app.png) 
+![Notes App Screenshot](frontend/public/notes-app.png)
 
 ---
 
